@@ -21,23 +21,24 @@
             text-align: center;
         }
 
+        .challenge-box {
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            padding: 30px;
+            width: 400px;
+            margin-bottom: 30px;
+        }
+
         .imgs {
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
         }
 
-        .Q1 {
-            padding-top: 40px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            padding: 20px;
-            width: 400px;
-        }
-
         h1 {
             color: #333;
+            margin-bottom: 20px;
         }
 
         label {
@@ -48,39 +49,49 @@
 
         input[type="text"] {
             width: 100%;
-            padding: 10px;
-            margin: 8px 0;
+            padding: 15px;
+            margin: 10px 0;
             box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+            border: 2px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
         }
 
         input[type="submit"] {
             background-color: #4caf50;
             color: white;
-            padding: 10px 20px;
+            padding: 15px 30px;
             border: none;
-            border-radius: 4px;
+            border-radius: 8px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
         }
 
         input[type="submit"]:hover {
             background-color: #45a049;
         }
+
+        /* Adjust image size */
+        .imgs img {
+            width: 150px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="imgs">
-            <img src="aabu.png" alt="Image 1">
-            <img src="purple_cyber.png" alt="Image 2">
-        </div>
-        <div class="Q1">
-            <h1>Welcome to AABU-PurbleCyber CTF</h1>
+        <div class="challenge-box">
+            <h1>AABU-PurbleCyber CTF Challenge</h1>
+            <div class="imgs">
+                <img src="aabu.png" alt="Image 1">
+                <img src="purple_cyber.png" alt="Image 2">
+            </div>
             <form action="/submit" method="get">
-                <label for="name">Try to get the Flag!</label>
-                <input type="text" id="name" name="name" placeholder="Make an alert" required>
+                <label for="name">Get the flag to win!</label>
+                <input type="text" id="name" name="name" placeholder="Try to make an alert!" required>
                 <input type="submit" value="Submit">
             </form>
         </div>
