@@ -50,7 +50,7 @@ app.get('/submit', async (req, res) => {
           <input type="text" id="name" name="name">
           ${scriptBlock}
           <br>
-          <p class="flag">PurpleCyber{Yay!_yo4u_m&ade2_it$}</p>
+          <p class="flag">AABUCTF{Yay!_yo4u_m&ade2_it$}</p>
         </div>
       </body>
       </html>
